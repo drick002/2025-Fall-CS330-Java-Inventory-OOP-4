@@ -23,6 +23,7 @@ public class ToolCreation implements ItemCreationStrategy
     {
         // Maybe call a Default Constructor...
         return null;
+       
     }
 
     @Override
@@ -42,6 +43,12 @@ public class ToolCreation implements ItemCreationStrategy
         Tool tool = new Tool();
 
         // Call the appropriate setters...
+        tool.setName(tokens[0]);
+        tool.setMaterial(tokens[1]);
+        tool.setDurability(Integer.parseInt(tokens[2]));
+        tool.setSpeed(Integer.parseInt(tokens[3]));
+        tool.setModifier(tokens[4]);
+        tool.setModifierLevel(Integer.parseInt(tokens[5]));
 
         return tool;
     }
@@ -50,6 +57,7 @@ public class ToolCreation implements ItemCreationStrategy
     public Item fromExisting(final Item original)
     {
         // Maybe clone original...
+
         return null;
-    }
+    }   
 }
