@@ -22,7 +22,7 @@ public class ToolCreation implements ItemCreationStrategy
     public Item fromDefaults()
     {
         // Maybe call a Default Constructor...
-        return null;
+        return new Tool();
        
     }
 
@@ -58,6 +58,6 @@ public class ToolCreation implements ItemCreationStrategy
     {
         // Maybe clone original...
 
-        return null;
+        return original.clone();
     }   
 }

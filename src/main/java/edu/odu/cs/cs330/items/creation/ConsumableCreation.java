@@ -54,6 +54,7 @@ public class ConsumableCreation implements ItemCreationStrategy
     public Item fromExisting(final Item original)
     {
         // Maybe clone original...
-        return null;
+        //Item copy = new Consumable();
+        return original.clone();
     }
 }
