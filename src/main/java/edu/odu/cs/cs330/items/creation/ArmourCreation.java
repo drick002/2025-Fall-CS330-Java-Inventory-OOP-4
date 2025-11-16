@@ -58,6 +58,9 @@ public class ArmourCreation implements ItemCreationStrategy
     public Item fromExisting(final Item original)
     {
         // Maybe clone original...
+        //Item copy = new Armour();
+        //copy = clone(original);
         return null;
+        
     }
 }
